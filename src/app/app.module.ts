@@ -15,13 +15,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
+import { ToDosComponent } from './components/to-dos/to-dos.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EntriesComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ToDosComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
