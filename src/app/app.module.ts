@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EntriesComponent } from './entries/entries.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/layout/header/header.component';
 
 //services
 import { EntryService } from './entry.service'
@@ -17,20 +17,24 @@ import { MatButtonModule } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
 import { ToDosComponent } from './components/to-dos/to-dos.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EntriesComponent,
-    FooterComponent,
     HeaderComponent,
     ToDosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    AddTodoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     //material design
     BrowserAnimationsModule, MatButtonModule, MatTableModule
   ],
