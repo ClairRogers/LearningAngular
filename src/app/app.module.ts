@@ -9,6 +9,12 @@ import { HeaderComponent } from './header/header.component';
 
 //services
 import { EntryService } from './entry.service'
+import { HttpClientModule } from '@angular/common/http';
+
+//material design
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,10 @@ import { EntryService } from './entry.service'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    //material design
+    BrowserAnimationsModule, MatButtonModule, MatTableModule
   ],
   //add service in providers
   providers: [EntryService],
